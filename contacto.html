@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popurrí</title>
+    <link rel="stylesheet" href="scss/contacto.css">
+    <!--Favicon-->
+    <link rel="icon" href="assets/images/logo-min.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <div class="main-container">
+        <!--Menú posicionado a la izquierda con toggle, logo y rrss-->
+        <div class="menu-container">
+            <div class="menu-toggle">
+                <img src="assets/images/menu-toggle.svg" alt="Abrir-menú"/>
+            </div>
+            <div class="menu-logo">
+                <a href="index.html" target="_self">
+                    <img src="assets/images/logo.svg" alt="Popurrí"/>
+                </a>
+            </div>
+            <div class="menu-social-media">
+                <div class="social-twitter">
+                    <a href="#" target="_self">
+                        <img src="assets/images/twitter.svg" alt="Twitter"/>
+                    </a>
+                </div>
+                <div class="social-instagram">
+                    <a href="#" target="_self">
+                        <img src="assets/images/instagram.svg" alt="Instagram"/>
+                    </a>  
+                </div>
+                <div class="social-facebook">
+                    <a href="#" target="_self">
+                        <img src="assets/images/facebook.svg" alt="Facebook"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Contenido interno del menú, aparece oculto antes de dar clic al toggle-->
+        <div class="menu-content"> 
+            <a href="manifiesto.html" target="_self">
+                <div class="menu-content-1">
+                    <p>MANIFIESTO</p>
+                </div>
+            </a>
+            <a href="sobrenosotros.html" target="_self">
+                <div class="menu-content-2">
+                    <p>SOBRE&nbsp;NOSOTROS</p>
+                </div>
+            </a>
+            <a href="contacto.html" target="_self">
+                <div class="menu-content-3">
+                    <p>CONTACTO</p>
+                </div>
+            </a>
+        </div>
+        <!--Contenido principal de la web-->
+        <div class="main-content" id="main-content">
+            <div class="column-1">
+                <div class="column-title">
+                    <p>CONTACTO</p>
+                </div>
+                <div class="contacto">
+                    <form>
+						<fieldset>
+							<legend>FORMULARIO DE CONTACTO</legend>
+						    <label for="nombre">Nombre</label>
+						    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+						    <label for="apellidos">Apellidos</label>
+						    <input type="text" id="apellidos" placeholder="Escribe tus apellidos">
+						    <label for="motivo">Mensaje</label>
+						    <textarea id="motivo" name="motivo" placeholder="Escribe algo"></textarea>
+						    <div class="centro">
+					   			<input type="submit" value="Enviar" action="mailto:dguiza.diaz@gmail.com" method="POST">
+					   		</div>
+						</fieldset>
+				  </form>
+                </div>
+            </div>
+        </div>
+        <!--End of main-content-->
+    </div>
+    <!--Botón de regreso-->
+    <div class="back-button">
+        <p>&lt;</p>
+    </div>
+
+    <script src="./app/main.js"></script>
+</body>
+</html>
